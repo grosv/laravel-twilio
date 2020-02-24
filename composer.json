@@ -1,0 +1,19 @@
+{
+    "name": "edgrosvenor/laravel-twilio",
+    "description": "Laravel 6+ wrapper for the Twilio SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ed Grosvenor",
+            "email": "ed.grosvenor@wickedviral.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^6.0|^7.0",
+        "twilio/sdk": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0"
+    }
+}
