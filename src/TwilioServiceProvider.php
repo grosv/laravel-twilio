@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Edgrosvenor\LaravelTwilio;
+namespace Grosv\LaravelTwilio;
 
 use Illuminate\Support\ServiceProvider;
 

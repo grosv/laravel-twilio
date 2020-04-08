@@ -10,16 +10,16 @@
         }
     ],
     "require": {
-        "php": "^7.2",
-        "illuminate/support": "^6.0|^7.0",
+        "php": "^7.4",
+        "illuminate/support": "^7.0",
         "twilio/sdk": "^6.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0"
+        "orchestra/testbench": "^5.0"
     },
     "autoload": {
         "psr-4": {
-            "Edgrosvenor\\LaravelTwilio\\": "src/"
+            "Grosv\\LaravelTwilio\\": "src/"
         }
     },
     "autoload-dev": {
@@ -30,7 +30,7 @@
     },
     "extra": {
         "laravel": {
-            "providers": "Edgrosvenor\\LaravelTwilio\\TwilioServiceProvider"
+            "providers": "Grosv\\LaravelTwilio\\TwilioServiceProvider"
         }
     }
 

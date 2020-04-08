@@ -1,36 +1,22 @@
 <?php
 
 
-namespace Edgrosvenor\LaravelTwilio;
+namespace Grosv\LaravelTwilio;
 
+
+use Grosv\LaravelTwilio\Actions\SendSMS;
+use Twilio\Rest\Client;
 
 class Twilio
 {
-    private $sid;
-    private $token;
-
-    public $to;
-    public $from;
-    public $message;
-
-    public function construct()
+    public function __construct()
     {
-        $this->sid = config('twilio.sid');
-        $this->token = config('twilio.token');
+        $this->twilio = new Client(config('twilio.sid'), config('twilio.token'));
     }
 
-    public function setTo($to)
+    public function sendSMS($message, $to, $from = null)
     {
-        $this->to = $to;
-    }
 
-    public function setFrom($from)
-    {
-        $this->from = $from;
-    }
-
-    public function setMessage($message)
-    {
-        $this->message = $message;
+        return (new SendSMS($this->twilio))->setFrom($from)->setTo($to)->setMessage($message)->execute();
     }
 }
