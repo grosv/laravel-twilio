@@ -1,5 +1,5 @@
 {
-    "name": "edgrosvenor/laravel-twilio",
+    "name": "grosv/laravel-twilio",
     "description": "Laravel 6+ wrapper for the Twilio SDK",
     "type": "library",
     "license": "MIT",
